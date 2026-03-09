@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Rich M 1:50 HM</title>
+
+<!-- PWA Meta -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rich M 1:50">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f0f0f">
+<meta name="description" content="Rich M — Sub 1:50 Half Marathon 12-Week Training Plan">
+
+<!-- Icons -->
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
+<link rel="manifest" id="pwa-manifest">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --card2: #222;
+    --accent: #e8ff47;
+    --accent2: #ff6b35;
+    --text: #f0f0f0;
+    --muted: #888;
+    --border: #2a2a2a;
+    --easy: #4ade80;
+    --quality: #fb923c;
+    --strength: #818cf8;
+    --long: #38bdf8;
+    --rest: #555;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    padding-bottom: max(40px, env(safe-area-inset-bottom));
+    padding-top: env(safe-area-inset-top);
+  }
+
+  header {
+    padding-top: max(20px, calc(env(safe-area-inset-top) + 12px));
+  }
+
+  header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 16px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .plan-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+  }
+
+  .plan-subtitle {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .race-badge {
+    background: var(--accent);
+    color: #000;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.95rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    line-height: 1.3;
+  }
+
+  .race-badge small {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+  }
+
+  /* Week selector */
+  .week-nav {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  .week-nav::-webkit-scrollbar { display: none; }
+
+  .week-btn {
+    flex-shrink: 0;
+    background: var(--border);
+    border: 1.5px solid transparent;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 11px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.03em;
+    position: relative;
+  }
+
+  .week-btn.active {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+  }
+
+  .week-btn.current-week::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 7px;
+    height: 7px;
+    background: var(--accent2);
+    border-radius: 50%;
+    border: 1.5px solid var(--bg);
+  }
+
+  .week-btn.cutback {
+    border-color: #444;
+  }
+
+  /* Main content */
+  main {
+    max-width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .meta-bar {
+    padding: 12px 16px 0;
+  }
+
+  /* Slide viewport */
+  .slide-viewport {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-track {
+    display: flex;
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+  }
+
+  .slide-track.no-transition {
+    transition: none !important;
+  }
+
+  .slide-page {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 0 16px 40px;
+  }
+
+  /* Swipe hint arrows */
+  .swipe-hint {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px 2px;
+  }
+  .swipe-arrow {
+    font-size: 0.7rem;
+    color: #3a3a3a;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.2s;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    user-select: none;
+  }
+  .swipe-arrow:hover { color: var(--muted); }
+  .swipe-arrow.hidden { opacity: 0; pointer-events: none; }
+
+  .week-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    margin-top: 4px;
+  }
+
+  .week-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+    color: var(--text);
+  }
+
+  .week-tag {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 3px 9px;
+    border-radius: 12px;
+    background: var(--border);
+    color: var(--muted);
+  }
+
+  .week-tag.cutback { background: #2a2218; color: #f59e0b; }
+  .week-tag.taper { background: #1a2a1a; color: var(--easy); }
+  .week-tag.race { background: #1a1a2a; color: #a78bfa; }
+
+  /* Day cards */
+  .day-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+
+  .day-card:active { border-color: #444; }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .day-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .day-name-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .day-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.01em;
+  }
+
+  .day-date {
+    font-size: 0.68rem;
+    color: var(--muted);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
+
+  .day-type {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .day-content {
+    padding: 0 14px 14px 36px;
+  }
+
+  .session-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .session-text.rest-text {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.82rem;
+  }
+
+  /* Pace pills */
+  .pace-pill {
+    display: inline-block;
+    background: #1e2a1a;
+    color: var(--easy);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 6px;
+    margin-top: 4px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  /* Checkbox */
+  .check-wrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  .check-wrap input[type="checkbox"] {
+    display: none;
+  }
+  .check-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000;
+    background: transparent;
+    transition: all 0.15s;
+    flex-shrink: 0;
+  }
+  .day-check:checked + .check-box {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* Today highlight */
+  .day-today {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 1px var(--accent);
+  }
+  .day-today .day-name {
+    color: var(--accent);
+  }
+  .day-today .day-date {
+    color: var(--accent);
+    opacity: 0.7;
+  }
+
+  /* Past day (date has passed) */
+  .day-past {
+    opacity: 0.55;
+    border-color: #222 !important;
+  }
+  .day-past .day-name {
+    text-decoration: line-through;
+    color: var(--muted);
+  }
+  .day-past .session-text {
+    color: var(--muted);
+  }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: 500;
+  }
+
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  /* Progress bar */
+  .progress-bar-wrap {
+    background: var(--border);
+    border-radius: 4px;
+    height: 3px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* Race day card */
+  .race-day-card {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border: 1px solid #4a4a8a;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .race-day-card .big-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+
+  .race-day-card p {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 6px;
+  }
+
+  .race-day-card .target {
+    display: inline-block;
+    margin-top: 12px;
+    background: var(--accent);
+    color: #000;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    padding: 6px 20px;
+    border-radius: 8px;
+    letter-spacing: 0.08em;
+  }
+</style>
+
+<script>
+// Inject PWA manifest dynamically
+const manifest = {
+  name: "Rich M 1:50 HM",
+  short_name: "Rich M 1:50",
+  description: "12-Week Half Marathon Training Plan — Target 1:50",
+  start_url: ".",
+  display: "standalone",
+  background_color: "#0f0f0f",
+  theme_color: "#0f0f0f",
+  orientation: "portrait",
+  icons: [
+    { src: "data:image/png;base64,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", sizes: "192x192", type: "image/png" },
+    { src: "data:image/png;base64,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", sizes: "512x512", type: "image/png", purpose: "any maskable" }
+  ]
+};
+const blob = new Blob([JSON.stringify(manifest)], {type: "application/manifest+json"});
+document.getElementById("pwa-manifest").href = URL.createObjectURL(blob);
+
+// Service Worker for offline support
+if ("serviceWorker" in navigator) {
+  const swCode = `
+    const CACHE = "hm-plan-v1";
+    const ASSETS = [self.location.href];
+    self.addEventListener("install", e => {
+      e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
+      self.skipWaiting();
+    });
+    self.addEventListener("activate", e => {
+      e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))));
+    });
+    self.addEventListener("fetch", e => {
+      e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+    });
+  `;
+  const swBlob = new Blob([swCode], {type: "application/javascript"});
+  navigator.serviceWorker.register(URL.createObjectURL(swBlob)).catch(() => {});
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div>
+      <div class="plan-title">Rich M 1:50 HM</div>
+      <div class="plan-subtitle">12 Week Training Plan</div>
+    </div>
+    <div class="race-badge">
+      <small>Race Day</small>
+      17 May
+    </div>
+  </div>
+  <div class="week-nav" id="weekNav"></div>
+</header>
+
+<main>
+  <div class="meta-bar">
+    <div class="progress-label">
+      <span>Progress</span>
+      <span id="progressText"></span>
+    </div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progressBar"></div>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--quality)"></div>Quality</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--easy)"></div>Easy</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--strength)"></div>Strength</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--long)"></div>Long Run</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--rest)"></div>Rest</div>
+    </div>
+  </div>
+
+  <div class="swipe-hint">
+    <span class="swipe-arrow" id="arrowLeft" onclick="swipeTo(activeWeek - 1, 'right')">← prev</span>
+    <span class="swipe-arrow" id="arrowRight" onclick="swipeTo(activeWeek + 1, 'left')">next →</span>
+  </div>
+
+  <div class="slide-viewport">
+    <div class="slide-track" id="slideTrack">
+    </div>
+  </div>
+</main>
+
+<script>
+// Dynamically calculate current week and day from plan start date
+const PLAN_START_DATE = new Date('2026-02-23');
+const today = new Date();
+today.setHours(0,0,0,0);
+const daysSinceStart = Math.floor((today - PLAN_START_DATE) / (1000 * 60 * 60 * 24));
+const CURRENT_WEEK = Math.min(12, Math.max(1, Math.floor(daysSinceStart / 7) + 1));
+const CURRENT_DAY  = Math.min(6, Math.max(0, daysSinceStart % 7)); // 0=Mon..6=Sun
+
+const weeks = [
+  {
+    label: "Week 1",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "3×8 min @ 5:30/km", pace: "5:30/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "6km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Thursday", type: "Steady", color: "var(--easy)", session: "6km steady", pace: "5:40–5:50/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "16km easy", pace: "6:05–6:20/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Rest" },
+    ]
+  },
+  {
+    label: "Week 2",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "5.5km easy + Upper body strength", pace: "5:50–6:10/km" },
+      { name: "Tuesday", type: "Quality", color: "var(--quality)", session: "4×8 min @ 5:05/km", pace: "5:05/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Rest" },
+      { name: "Thursday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "17km easy", pace: "5:50/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper body" },
+    ]
+  },
+  {
+    label: "Week 3",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "3×10 min @ 5:10/km", pace: "5:10/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "8km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Thursday", type: "Steady", color: "var(--easy)", session: "8km steady", pace: "5:40–5:50/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "18km easy", pace: "5:50/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper body" },
+    ]
+  },
+  {
+    label: "Week 4",
+    tag: "cutback",
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "20 min continuous @ 5:10/km", pace: "5:10/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "7km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower (recovery)" },
+      { name: "Thursday", type: "Steady", color: "var(--easy)", session: "6km steady", pace: "5:40–5:50/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "13km easy (cutback)", pace: "5:50/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper (recovery)" },
+    ]
+  },
+  {
+    label: "Week 5",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "5×1km @ 4:55/km", pace: "4:55/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "8km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Thursday", type: "Steady", color: "var(--easy)", session: "8km steady", pace: "5:30–5:40/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "15km — last 4km @ 5:15/km", pace: "5:50/km → 5:15/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper body" },
+    ]
+  },
+  {
+    label: "Week 6",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "6×1km @ 4:55/km", pace: "4:55/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "8km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Thursday", type: "Steady", color: "var(--easy)", session: "9km steady", pace: "5:30–5:40/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "16km — last 5km @ 5:15/km", pace: "5:50/km → 5:15/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper body" },
+    ]
+  },
+  {
+    label: "Week 7",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "4×2km @ 5:00/km", pace: "5:00/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "9km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Thursday", type: "Steady", color: "var(--easy)", session: "10km steady", pace: "5:30–5:40/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "18km — last 6km @ 5:10/km", pace: "5:50/km → 5:10/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper body" },
+    ]
+  },
+  {
+    label: "Week 8",
+    tag: "cutback",
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "3×3km @ 5:05/km", pace: "5:05/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "8km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower (recovery)" },
+      { name: "Thursday", type: "Steady", color: "var(--easy)", session: "8km steady", pace: "5:30–5:40/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "16km easy (cutback)", pace: "5:50/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper (recovery)" },
+    ]
+  },
+  {
+    label: "Week 9",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "6km continuous @ 5:05/km", pace: "5:05/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "9km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Thursday", type: "Recovery", color: "var(--easy)", session: "8km easy recovery", pace: "5:50–6:10/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "20km — middle 10km @ 5:10/km", pace: "5:50/km → 5:10/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper body" },
+    ]
+  },
+  {
+    label: "Week 10",
+    tag: null,
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "8km continuous @ 5:05/km", pace: "5:05/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "8km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Lower body" },
+      { name: "Thursday", type: "Recovery", color: "var(--easy)", session: "6km recovery", pace: "5:50–6:10/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "16km — middle 8km @ 5:05/km", pace: "5:50/km → 5:05/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper body" },
+    ]
+  },
+  {
+    label: "Week 11",
+    tag: "taper",
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "5km @ 5:00/km", pace: "5:00/km" },
+      { name: "Tuesday", type: "Easy", color: "var(--easy)", session: "8km easy", pace: "5:50–6:10/km" },
+      { name: "Wednesday", type: "Strength", color: "var(--strength)", session: "Light lower body" },
+      { name: "Thursday", type: "Easy", color: "var(--easy)", session: "6km easy", pace: "5:50–6:10/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Long Run", color: "var(--long)", session: "13km — 5km @ 5:10/km", pace: "5:50/km → 5:10/km" },
+      { name: "Sunday", type: "Strength", color: "var(--strength)", session: "Upper (recovery)" },
+    ]
+  },
+  {
+    label: "Week 12",
+    tag: "race",
+    days: [
+      { name: "Monday", type: "Quality", color: "var(--quality)", session: "3×1km @ 5:00/km", pace: "5:00/km" },
+      { name: "Tuesday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Wednesday", type: "Mobility", color: "var(--strength)", session: "Very light mobility only" },
+      { name: "Thursday", type: "Easy", color: "var(--easy)", session: "6km easy", pace: "5:50–6:10/km" },
+      { name: "Friday", type: "Rest", color: "var(--rest)", session: "Rest", rest: true },
+      { name: "Saturday", type: "Easy", color: "var(--easy)", session: "5km easy shake-out", pace: "5:50–6:10/km" },
+      { name: "Sunday", type: "RACE DAY", color: "var(--accent)", session: "HALF MARATHON", race: true },
+    ]
+  }
+];
+
+let activeWeek = CURRENT_WEEK - 1;
+
+// --- Plan start date: Week 1 = Mon 23 Feb 2026 ---
+const PLAN_START = new Date('2026-02-23'); // Monday
+// dayOffset: weekIdx * 7 + dayOfWeek (0=Mon..6=Sun)
+function getDayDate(weekIdx, dayIdx) {
+  const d = new Date(PLAN_START);
+  d.setDate(d.getDate() + weekIdx * 7 + dayIdx);
+  return d;
+}
+function getDayLabel(weekIdx, dayIdx) {
+  const d = getDayDate(weekIdx, dayIdx);
+  return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' }).replace(/ /g, ' ');
+}
+
+function isDayPast(weekIdx, dayIdx) {
+  const dayDate = getDayDate(weekIdx, dayIdx);
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  return dayDate < today;
+}
+
+// --- Persistence ---
+const STORAGE_KEY = 'hm_plan_completions';
+function loadCompletions() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; }
+}
+function saveCompletion(weekIdx, dayIdx, checked) {
+  const data = loadCompletions();
+  const key = `${weekIdx}_${dayIdx}`;
+  if (checked) data[key] = true; else delete data[key];
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+function isCompleted(weekIdx, dayIdx) {
+  return !!loadCompletions()[`${weekIdx}_${dayIdx}`];
+}
+
+// --- Build all 12 slides once ---
+function buildAllSlides() {
+  const track = document.getElementById('slideTrack');
+  track.innerHTML = '';
+  weeks.forEach((week, weekIdx) => {
+    const page = document.createElement('div');
+    page.className = 'slide-page';
+    page.id = `slide_${weekIdx}`;
+    page.innerHTML = buildWeekHTML(week, weekIdx);
+    track.appendChild(page);
+    attachCheckboxListeners(page, weekIdx);
+  });
+}
+
+function buildWeekHTML(week, weekIdx) {
+  let html = `<div class="week-header"><div class="week-label">${week.label}</div>`;
+  if (week.tag) {
+    const labels = { cutback: 'Cutback Week', taper: 'Taper', race: 'Race Week' };
+    html += `<div class="week-tag ${week.tag}">${labels[week.tag]}</div>`;
+  } else if (weekIdx === CURRENT_WEEK - 1) {
+    html += `<div class="week-tag" style="background:#1a2218;color:var(--easy)">Current</div>`;
+  }
+  html += `</div>`;
+
+  week.days.forEach((day, dayIdx) => {
+    if (day.race) {
+      html += `<div class="race-day-card">
+        <div class="big-label">🏁 Race Day</div>
+        <p>17 May 2026 — Half Marathon</p>
+        <div class="target">Target: 1:50:00</div>
+      </div>`;
+      return;
+    }
+    const past = isDayPast(weekIdx, dayIdx);
+    const isToday = (weekIdx === CURRENT_WEEK - 1) && (dayIdx === CURRENT_DAY);
+    const checked = isCompleted(weekIdx, dayIdx);
+    html += `<div class="day-card ${past ? 'day-past' : ''} ${isToday ? 'day-today' : ''}" id="card_${weekIdx}_${dayIdx}">
+      <div class="day-header">
+        <div class="day-dot" style="background:${day.color}"></div>
+        <div class="day-name-wrap">
+          <div class="day-name">${day.name}</div>
+          <div class="day-date">${getDayLabel(weekIdx, dayIdx)}</div>
+        </div>
+        <div class="day-type">${day.type}</div>
+        <label class="check-wrap" onclick="event.stopPropagation()">
+          <input type="checkbox" class="day-check" data-week="${weekIdx}" data-day="${dayIdx}" ${checked ? 'checked' : ''}>
+          <span class="check-box">${checked ? '✓' : ''}</span>
+        </label>
+      </div>
+      <div class="day-content">
+        <div class="session-text ${day.rest ? 'rest-text' : ''}">${day.session}</div>
+        ${day.pace ? `<div class="pace-pill">${day.pace}</div>` : ''}
+      </div>
+    </div>`;
+  });
+  return html;
+}
+
+function attachCheckboxListeners(page, weekIdx) {
+  page.querySelectorAll('.day-check').forEach(cb => {
+    cb.addEventListener('change', e => {
+      const wIdx = parseInt(e.target.dataset.week);
+      const dIdx = parseInt(e.target.dataset.day);
+      const checked = e.target.checked;
+      saveCompletion(wIdx, dIdx, checked);
+      const box = e.target.nextElementSibling;
+      box.textContent = checked ? '✓' : '';
+    });
+  });
+}
+
+// --- Nav ---
+function renderWeekNav() {
+  const nav = document.getElementById('weekNav');
+  nav.innerHTML = '';
+  weeks.forEach((w, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'week-btn' + (i === activeWeek ? ' active' : '') + (i === CURRENT_WEEK - 1 ? ' current-week' : '') + (w.tag === 'cutback' ? ' cutback' : '');
+    btn.textContent = `W${i + 1}`;
+    btn.onclick = () => swipeTo(i, i > activeWeek ? 'left' : 'right');
+    nav.appendChild(btn);
+  });
+  // arrows
+  document.getElementById('arrowLeft').classList.toggle('hidden', activeWeek === 0);
+  document.getElementById('arrowRight').classList.toggle('hidden', activeWeek === weeks.length - 1);
+}
+
+function updateProgressBar() {
+  const pct = Math.round(((activeWeek + 1) / 12) * 100);
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressText').textContent = `Week ${activeWeek + 1} of 12`;
+}
+
+// --- Slide animation ---
+function positionTrack(weekIdx, animated) {
+  const track = document.getElementById('slideTrack');
+  if (!animated) track.classList.add('no-transition');
+  track.style.transform = `translateX(${-weekIdx * 100}%)`;
+  if (!animated) {
+    // force reflow then re-enable
+    track.getBoundingClientRect();
+    track.classList.remove('no-transition');
+  }
+}
+
+function swipeTo(targetWeek, direction) {
+  if (targetWeek < 0 || targetWeek >= weeks.length || targetWeek === activeWeek) return;
+  activeWeek = targetWeek;
+  positionTrack(activeWeek, true);
+  renderWeekNav();
+  updateProgressBar();
+  setTimeout(() => {
+    const nav = document.getElementById('weekNav');
+    const active = nav.querySelector('.active');
+    if (active) active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+  }, 50);
+}
+
+// --- Touch swipe ---
+let touchStartX = 0, touchStartY = 0, isSwiping = false;
+const viewport = document.querySelector('.slide-viewport') || document;
+
+document.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  isSwiping = false;
+}, { passive: true });
+
+document.addEventListener('touchmove', e => {
+  if (isSwiping) return;
+  const dx = e.touches[0].clientX - touchStartX;
+  const dy = e.touches[0].clientY - touchStartY;
+  if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) isSwiping = true;
+}, { passive: true });
+
+document.addEventListener('touchend', e => {
+  if (!isSwiping) return;
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(dx) > 45) {
+    if (dx < 0) swipeTo(activeWeek + 1, 'left');
+    else swipeTo(activeWeek - 1, 'right');
+  }
+  isSwiping = false;
+}, { passive: true });
+
+// --- Init ---
+function init() {
+  buildAllSlides();
+  positionTrack(activeWeek, false);
+  renderWeekNav();
+  updateProgressBar();
+}
+
+init();
+</script>
+</body>
+</html>
